@@ -1,0 +1,8 @@
+# для вывода года в копирайт
+[[!+nowdate:default=`now`:strtotime:date=`%Y`]]
+
+# для вывода текущей даты
+[[!+nowdate:default=`now`:strtotime:date=`%d.%m.%Y`]]
+
+# для вывода Завтрашней даты
+[[!+tomorrowdate:default=`tomorrow`:strtotime:date=`%d,%m,%Y`]]

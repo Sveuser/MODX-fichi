@@ -1,0 +1,38 @@
+<div id="modal_form">
+<span id="modal_close">X</span>
+					[[!AjaxForm?
+					&snippet=`FormIt`
+					&form=`tpl.AjaxForm`
+					&hooks=`email`
+					&emailTpl=`mailtpl2`
+					&emailSubject=`Сообщение с сайта`
+					&emailTo=`9119898@gmail.com`
+					&validate=`name:required,phone:required`
+					&validationErrorMessage=`В форме содержатся ошибки!`
+					&successMessage=`Сообщение успешно отправлено`
+					]]
+</div>
+<div id="overlay"></div>
+<script>
+$(document).ready(function() {
+	$('span#go').click( function(event){
+		event.preventDefault();
+		$('#overlay').fadeIn(400,
+			function(){
+				$('#modal_form') 
+					.css('display', 'block')
+					.animate({opacity: 1, top: '50%'}, 200);
+		});
+	});
+	
+	$('#modal_close, #overlay').click( function(){
+		$('#modal_form')
+			.animate({opacity: 0, top: '45%'}, 200, 
+				function(){
+					$(this).css('display', 'none');
+					$('#overlay').fadeOut(400);
+				}
+			);
+	});
+});
+</script>

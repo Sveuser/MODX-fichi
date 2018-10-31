@@ -1,0 +1,42 @@
+<html>
+    
+<head>
+        
+<title>Вам пришло новое сообщение через форму на сайте rmp-spb.ru</title>  
+    
+</head>
+    
+<body>
+        
+<div>
+            Посетитель сайта <a href="sistemy-vyzova.ru">sistemy-vyzova.ru</a>,
+            
+<!-- представившийся как <b>[[+contact_name]]</b>,<br/>
+            
+в форме обратной связи указал телефон: <b>[[+contact_type]]</b> -->
+            
+<table class="callback">
+                
+<tr>
+                    
+<td>Имя:</td>
+                    
+<td>[[+contact_name]]</td>
+                
+</tr>
+               
+ <tr>
+                    
+<td>Телефон:</td>
+                   
+<td>[[+contact_type]]</td>
+                
+</tr>
+            
+</table>
+        
+</div>
+    
+</body>
+
+</html>

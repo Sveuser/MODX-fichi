@@ -1,0 +1,20 @@
+[[!AjaxForm?
+	&snippet=`FormIt`
+	&form=`tpl.AjaxForm.example`
+	&hooks=`email`
+	&emailTpl=`mailtpl`
+	&emailSubject=`Сообщение с сайта Экспертная оценка -страница контакты`
+	&emailTo=`9119898@gmail.com`
+	&validate=`name:required,email:required,message:required`
+	&validationErrorMessage=`В форме содержатся ошибки!`
+	&successMessage=`Сообщение успешно отправлено`
+]]
+function submitForm() {
+    var form = document.getElementById("formre");
+    if (validate_form(form)) {
+        form.submit();
+    } else {
+        grecaptcha.reset();
+    }
+}
+</script>

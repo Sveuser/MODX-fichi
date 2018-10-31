@@ -1,0 +1,51 @@
+migx - дополнительные поля
+
+--------------------------
+вывод в шаблон или ресурсе
+
+	[[getImageList?
+		&tvname=`serviceItem`
+		&tpl=`tplServiceItem`
+	]]
+
+--------------------------
+чанк `tplServiceItem`
+
+	<div class="cell-sm-6 cell-md-4">
+		<div class="thumbnail-classic">
+			<a class="thumbnail-classic-image" href="[[~[[+id]]]]">
+				<img src="[[!phpthumbof? &input=`[[+image]]` &options=`&w=450&h=230&zc=1`]]" class="responsive-img" alt="[[+title]]"/>
+			</a>
+			<div class="thumbnail-classic-caption">
+				<a class="thumbnail-classic-title" href="[[~[[+id]]]]">[[+title]]</a>
+				[[+description]]
+			</div>
+		</div>
+	</div>
+ ------------------------------------------------
+
+доп-поле `serviceItem`
+
+Тип ввода migx/доступно для шаблонов +
+
+Вкладки формы:
+
+[
+{"caption":"Название работы", "fields": [
+{"field":"title","caption":"Заголовок"},
+{"field":"id","caption":"Id ресурса"},
+{"field":"image","caption":"Изображение","inputTV":"serviceItemImage"},{"field":"description","caption":"Описание работы","inputTVtype":"richtext"}
+]}
+]
+
+Разметка колонок:
+
+[
+{"header": "Заголовок", "width": "100", "sortable": "true", "dataIndex": "title"},
+{"header": "Изображение", "width": "100", "sortable": "false", "dataIndex": "image","renderer": "this.renderImage"}
+]
+
+----------------------------------------
+доп-поле `serviceItemImage`
+
+Тип ввода Изображение/доступно для шаблонов -

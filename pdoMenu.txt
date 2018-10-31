@@ -1,0 +1,26 @@
+[[pdoMenu?
+                       
+&level =`2`
+                       
+&parents=`3,4,10,13`
+                       
+&resources=`-175,-119,-121,-123,-127,-41,-43,-114,-8`
+                       
+&firstClass=`0`
+                       
+&hereClass=`0`
+                       
+&showUnpublished=`1`
+                       
+&tplOuter=`@INLINE <ul class="rd-navbar-nav">[[+wrapper]]</ul>`
+                       
+&tplInner=`@INLINE <ul class="rd-navbar-dropdown product-mnu">[[+wrapper]]</ul>`
+                       
+&tpl=`@INLINE <li class="li-[[+id]]"><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+     
+                  
+&displayStart=`1`
+                       
+&tplStart=`@INLINE <li><a href="[[+link]]" [[+attributes]]>[[+menutitle]]</a>[[+wrapper]]</li>`
+                    
+]]

@@ -1,0 +1,47 @@
+
+<div class="forma pb-60" style="display:block !important;">
+	
+<div class="zag1_10">Заявка</div>
+	
+<p>Оставьте заявку и получите расчет в течение часа</p>
+	
+<div class="forma_count">
+		
+		    
+[[!FormIt?
+		        
+&hooks=`email`
+                
+&emailTpl=`feedback_mailtpl`
+                
+&emailSubject=`Сообщение с сайта Системы Вызова`
+                
+&emailTo=`info@sistemy-vyzova.ru`
+                
+&emailFrom=`robot@sistemy-vyzova.ru`
+                
+]]
+			
+<form method="post" id="form" action="[[~[[*id]]]]">
+			    
+<div class="form-wrap">
+			        
+<input name="contact_name" type="text" class="zak sis55" required pattern="[A-Za-zА-Яа-яЁё\s]{3,}" placeholder="Введите ваше имя" style="background: url(/assets/img/form/user.png) no-repeat 95% 12px;"/> 
+			        <input name="contact_type" type="text" class="zak sis56" required placeholder="Введите телефон или e-mail" style="background: url(/assets/img/form/phone.png) no-repeat 95% 12px;"/> 
+			        <input name="submit" type="submit" value="Отправить заявку" class="zak inp"/>
+			        
+<div class="success">
+						
+<p>Спасибо за заявку!</p>
+					
+</div>
+			    
+</div>
+
+			
+</form>
+		
+	
+</div>
+
+</div>

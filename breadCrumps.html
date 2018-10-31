@@ -1,0 +1,10 @@
+<section class="breadCrumps">
+	<div class="wrapper">
+		[[BreadCrumb? 
+		&showHomeCrumb=`0`
+		&containerTpl=`@INLINE <ul id="breadcrumb" class="list-breadCrumps" itemprop="breadcrumb"> <li><a href="[[++site_url]]">Главная</a> <i> | </i> </li> [[+crumbs]]</ul>`
+		&linkCrumbTpl=`@INLINE <li><a href="[[+link]]">[[+pagetitle]]</a> <i> | </i> </li>`
+		&currentCrumbTpl=`@INLINE &nbsp;<li><span> [[+pagetitle]]</span></li>`
+		]]
+	</div>
+</section>
