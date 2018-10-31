@@ -9,6 +9,7 @@
 	&validationErrorMessage=`В форме содержатся ошибки!`
 	&successMessage=`Сообщение успешно отправлено`
 ]]
+<script>
 function submitForm() {
     var form = document.getElementById("formre");
     if (validate_form(form)) {
